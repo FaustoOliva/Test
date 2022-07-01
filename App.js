@@ -21,7 +21,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Forros</Text>
-      <FlatList
+      <FlatList style={styles.container}
         data={alumnos}
         renderItem={({item})=><Text>{item.estado}, {item.legajoalumno.nombre}</Text>}
       /> 
@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 70
   },
 });
